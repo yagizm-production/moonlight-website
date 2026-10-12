@@ -22,11 +22,11 @@
   <div class="stars"></div>
   <nav>
     <div class="wrap nav-inner">
-      <a class="brand" href="#" onclick="show('home');return false;"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/logo.png" alt=""><span>Moon light cafe</span></a>
+      <a class="brand" href="#" onclick="show('home');return false;"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/logo.png" alt="" width="40" height="40" fetchpriority="high"><span>Moon light cafe</span></a>
       <div class="links">
-        <a class="nav-btn" href="#" onclick="show('menu');return false;">QR Menü</a>
-        <a class="nav-btn" href="#" onclick="show('hakkimizda');return false;">Hakkımızda</a>
-        <a class="nav-btn" href="#" onclick="show('galeri');return false;">Galeri</a>
+        <a class="nav-btn" href="#menu" onclick="show('menu');return false;">QR Menü</a>
+        <a class="nav-btn" href="#hakkimizda" onclick="show('hakkimizda');return false;">Hakkımızda</a>
+        <a class="nav-btn" href="#galeri" onclick="show('galeri');return false;">Galeri</a>
         <a class="nav-btn" href="#konum" onclick="show('konum');return false;">Konum</a>
       </div>
       <a class="cta" href="tel:+905539882566">Ara</a>
@@ -36,19 +36,37 @@
   <div id="home" class="page">
     <header class="wrap hero">
       <div class="panel hero-copy">
-        <img class="hero-logo" src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/logo.png" alt="Logo">
+        <img class="hero-logo" src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/logo.png" alt="Logo" width="96" height="72" fetchpriority="high">
         <div class="kicker">Kuşadası · Ay ışığı</div>
         <h1>Moon light<br>cafe</h1>
         <p class="lead">Geceye yumuşak bir ışık. Kahvaltıdan ızgaraya, tatlıdan çaya.</p>
         <div class="meta"><span>4.8 · 41 yorum</span><span>Pzt–Cmt 11:00–00:00 · Pazar kapalı</span><span>Huzur Sk. 14/A</span></div>
-        <a class="cta" href="#" onclick="show('menu');return false;">Menüye in</a>
+        <a class="cta" href="#menu" onclick="show('menu');return false;">Menüye in</a>
         <a class="cta cta-ghost" href="#konum" onclick="show('konum');return false;">Konum & Yol Tarifi</a>
       </div>
       <div class="hero-photos">
-        <img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe_out.jpg" alt="Kafe dışarı">
-        <img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe_in.jpg" alt="Kafe içi">
+        <picture><source srcset="images/gallery/mekan-26.webp" type="image/webp"><img src="images/gallery/mekan-26.jpg" alt="Moon Light Cafe ışıklı neon tabela" width="1600" height="1066" loading="eager" fetchpriority="high" decoding="async"></picture>
+        <picture><source srcset="images/gallery/mekan-31.webp" type="image/webp"><img src="images/gallery/mekan-31.jpg" alt="Moon Light Cafe gece terası" width="1600" height="1066" loading="eager" fetchpriority="high" decoding="async"></picture>
       </div>
     </header>
+    <section class="wrap section">
+      <h2>Mekanımız</h2>
+      <p class="sub">Huzur Sokak'ta, ay ışığında bir teras.</p>
+      <div class="venue-strip"><div class="card" onclick="openLb(this)" data-src="images/gallery/mekan-26.jpg" data-title="Neon tabela"><picture><source srcset="images/gallery/mekan-26.webp" type="image/webp"><img src="images/gallery/mekan-26.jpg" alt="Moon Light Cafe Neon tabela" width="1600" height="1066" loading="lazy" decoding="async"></picture></div><div class="card" onclick="openLb(this)" data-src="images/gallery/mekan-29.jpg" data-title="Giriş"><picture><source srcset="images/gallery/mekan-29.webp" type="image/webp"><img src="images/gallery/mekan-29.jpg" alt="Moon Light Cafe Giriş" width="1600" height="1066" loading="lazy" decoding="async"></picture></div><div class="card" onclick="openLb(this)" data-src="images/gallery/mekan-30.jpg" data-title="Gece teras"><picture><source srcset="images/gallery/mekan-30.webp" type="image/webp"><img src="images/gallery/mekan-30.jpg" alt="Moon Light Cafe Gece teras" width="1600" height="1066" loading="lazy" decoding="async"></picture></div><div class="card" onclick="openLb(this)" data-src="images/gallery/mekan-31.jpg" data-title="Teras"><picture><source srcset="images/gallery/mekan-31.webp" type="image/webp"><img src="images/gallery/mekan-31.jpg" alt="Moon Light Cafe Teras" width="1600" height="1066" loading="lazy" decoding="async"></picture></div><div class="card" onclick="openLb(this)" data-src="images/gallery/mekan-38.jpg" data-title="Oturma alanı"><picture><source srcset="images/gallery/mekan-38.webp" type="image/webp"><img src="images/gallery/mekan-38.jpg" alt="Moon Light Cafe Oturma alanı" width="1600" height="1066" loading="lazy" decoding="async"></picture></div><div class="card" onclick="openLb(this)" data-src="images/gallery/mekan-39.jpg" data-title="Teras köşesi"><picture><source srcset="images/gallery/mekan-39.webp" type="image/webp"><img src="images/gallery/mekan-39.jpg" alt="Moon Light Cafe Teras köşesi" width="1600" height="1066" loading="lazy" decoding="async"></picture></div></div>
+      <a class="more-link" href="#galeri" onclick="show('galeri');return false;">Tüm galeri →</a>
+    </section>
+    <section class="wrap section">
+      <h2>Öne çıkanlar</h2>
+      <p class="sub">Menümüzden sevilen lezzetler.</p>
+      <div class="cards"><div class="card" onclick="openLb(this)" data-src="images/burger.jpg" data-title="Hamburger"><img src="images/burger.jpg" alt="Hamburger" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Hamburger</b><span>Patates ile</span><em>350 ₺</em></div></div><div class="card" onclick="openLb(this)" data-src="images/kofte.jpg" data-title="Izgara köfte"><img src="images/kofte.jpg" alt="Izgara köfte" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Izgara köfte</b><span>Grilled meatballs</span><em>350 ₺</em></div></div><div class="card" onclick="openLb(this)" data-src="images/steak.jpg" data-title="Beef steak"><img src="images/steak.jpg" alt="Beef steak" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Beef steak</b><span>Café de Paris sos, pilav, biber, cips ve salata</span><em>900 ₺</em></div></div><div class="card" onclick="openLb(this)" data-src="images/alfredo.jpg" data-title="Alfredo penne"><img src="images/alfredo.jpg" alt="Alfredo penne" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Alfredo penne</b><span>Kremalı, tavuklu</span><em>200 ₺</em></div></div><div class="card" onclick="openLb(this)" data-src="images/menemen.jpg" data-title="Menemen"><img src="images/menemen.jpg" alt="Menemen" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Menemen</b><span>Domates, biber, yumurta</span><em>250 ₺</em></div></div><div class="card" onclick="openLb(this)" data-src="images/itavuk.jpg" data-title="Izgara tavuk"><img src="images/itavuk.jpg" alt="Izgara tavuk" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Izgara tavuk</b><span>Grilled chicken</span><em>350 ₺</em></div></div></div>
+      <a class="more-link" href="#menu" onclick="show('menu');return false;">Tüm menü →</a>
+    </section>
+    <section class="wrap section">
+      <div class="home-ctas">
+        <a class="panel home-cta" href="https://g.page/r/CZMtfWZ4X0o1EBM/review" target="_blank" rel="noopener"><b>Google'da 4.8 ★</b><span>41 yorum · Siz de yorum bırakın</span></a>
+        <a class="panel home-cta" href="#konum" onclick="show('konum');return false;"><b>Konum & Saatler</b><span>Türkmen, Huzur Sk. 14/A · Pzt–Cmt 11:00–00:00 · Pazar kapalı</span></a>
+      </div>
+    </section>
   </div>
 
   <div id="menu" class="page" style="display:none">
@@ -141,8 +159,8 @@
           <a class="cta" href="tel:+905539882566" style="margin-top:10px">Bizi ara</a>
         </div>
         <div class="about-photos">
-          <img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe_out.jpg" alt="Kafe dışarı">
-          <img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe_in.jpg" alt="Kafe içi">
+          <picture><source srcset="images/gallery/mekan-30.webp" type="image/webp"><img src="images/gallery/mekan-30.jpg" alt="Moon Light Cafe gece teras" width="1600" height="1066" loading="lazy" decoding="async"></picture>
+          <picture><source srcset="images/gallery/mekan-39.webp" type="image/webp"><img src="images/gallery/mekan-39.jpg" alt="Moon Light Cafe teras" width="1600" height="1066" loading="lazy" decoding="async"></picture>
         </div>
       </div>
     </section>
@@ -210,6 +228,7 @@
     document.querySelectorAll('.page').forEach(p=>p.style.display='none');
     document.getElementById(id).style.display='block';
     window.scrollTo(0,0);
+    var h=id==='home'?location.pathname:'#'+id; if(location.hash!==(id==='home'?'':'#'+id)) history.replaceState(null,'',h);
   }
   function openLb(el){
     document.getElementById('lb-img').src = el.dataset.src;
