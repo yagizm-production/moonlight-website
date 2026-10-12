@@ -4,8 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Moon light cafe · Kuşadası</title>
-  <meta name="description" content="Moon light cafe, Kuşadası Türkmen Huzur Sokak. Kahvaltı, tavuk, ızgara, tatlı ve içecekler.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,174 +12,122 @@
   <div class="stars"></div>
   <nav>
     <div class="wrap nav-inner">
-      <a class="brand" href="#top"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/logo.png" alt=""><span>Moon light cafe</span></a>
+      <a class="brand" href="#" onclick="show('home');return false;"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/logo.png" alt=""><span>Moon light cafe</span></a>
       <div class="links">
-        <a href="#menu">QR Menü</a>
-        <a href="#hakkimizda">Hakkımızda</a>
-        <a href="#galeri">Galeri</a>
+        <a class="nav-btn" href="#" onclick="show('menu');return false;">QR Menü</a>
+        <a class="nav-btn" href="#" onclick="show('hakkimizda');return false;">Hakkımızda</a>
+        <a class="nav-btn" href="#" onclick="show('galeri');return false;">Galeri</a>
       </div>
       <a class="cta" href="tel:+905539882566">Ara</a>
     </div>
   </nav>
 
-  <header class="wrap hero" id="top">
-    <div class="panel hero-copy">
-      <img class="hero-logo" src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/logo.png" alt="Logo">
-      <div class="kicker">Kuşadası · Ay ışığı</div>
-      <h1>Moon light<br>cafe</h1>
-      <p class="lead">Geceye yumuşak bir ışık. Kahvaltıdan ızgaraya, tatlıdan çaya — her kalemin kendi fotoğrafı var.</p>
-      <div class="meta">
-        <span>4.8 · 41 yorum</span>
-        <span>Pzt–Cmt 11:00–00:00</span>
-        <span>Huzur Sk. 14/A</span>
+  <div id="home" class="page">
+    <header class="wrap hero">
+      <div class="panel hero-copy">
+        <img class="hero-logo" src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/logo.png" alt="Logo">
+        <div class="kicker">Kuşadası · Ay ışığı</div>
+        <h1>Moon light<br>cafe</h1>
+        <p class="lead">Geceye yumuşak bir ışık. Kahvaltıdan ızgaraya, tatlıdan çaya.</p>
+        <div class="meta"><span>4.8 · 41 yorum</span><span>Pzt–Cmt 11:00–00:00</span><span>Huzur Sk. 14/A</span></div>
+        <a class="cta" href="#" onclick="show('menu');return false;">Menüye in</a>
       </div>
-      <a class="cta" href="#menu">Menüye in</a>
-    </div>
-    <div class="hero-photos">
-      <img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe_out.jpg" alt="Kafe dışarı">
-      <img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe_in.jpg" alt="Kafe içi">
-    </div>
-  </header>
-
-  <section class="wrap section" id="menu">
-    <h2>Menü</h2>
-    <p class="sub">Kaynak menüdeki bütün kalemler. İçecek ve tatlı fiyatı yoktu.</p>
-
-    <div class="cat-title">Kahvaltı</div>
-    <div class="cards">
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/menemen.jpg" alt="Menemen"><div class="info"><b>Menemen</b><span>Domates, biber, yumurta</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sucuk.jpg" alt="Sucuklu yumurta"><div class="info"><b>Sucuklu yumurta</b><span>Sahanda sucuk</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sahanda.jpg" alt="Sahanda yumurta"><div class="info"><b>Sahanda yumurta</b><span>Üç yumurta</span><em>200 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sogus.jpg" alt="Soğuş tabağı"><div class="info"><b>Soğuş tabağı</b><span>Domates, salatalık, peynir</span><em>150 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/bal.jpg" alt="Bal ve tereyağı"><div class="info"><b>Bal ve tereyağı</b><span>Bal, tereyağı, ekmek</span><em>150 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/patates.jpg" alt="Patates cipsi"><div class="info"><b>Patates cipsi</b><span>Kızarmış patates</span><em>150 ₺</em></a></div></div>
-    </div>
-
-    <div class="cat-title">Tavuk</div>
-    <div class="cards">
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/kori.jpg" alt="Köri"><div class="info"><b>Köri soslu tavuk</b><span>Chicken curry</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/tatliaci.jpg" alt="Tatlı acı"><div class="info"><b>Tatlı acı soslu tavuk</b><span>Sweet chili</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe.jpg" alt="Café de Paris"><div class="info"><b>Café de Paris</b><span>Otlu kremalı sos</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/mexican.jpg" alt="Mexican"><div class="info"><b>Mexican soslu tavuk</b><span>Mexican chicken</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/tsote.jpg" alt="Tavuk sote"><div class="info"><b>Tavuk sote</b><span>Chicken sauté</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/bbq.jpg" alt="BBQ"><div class="info"><b>Barbekü soslu tavuk</b><span>BBQ chicken</span><em>250 ₺</em></a></div></div>
-    </div>
-
-    <div class="cat-title">Aparatif</div>
-    <div class="cards">
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/citir.jpg" alt="Çıtır tavuk"><div class="info"><b>Çıtır tavuk</b><span>Crispy chicken</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/schnitzel.jpg" alt="Şinitzel"><div class="info"><b>Şinitzel</b><span>Schnitzel</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/durum.jpg" alt="Dürüm"><div class="info"><b>Çıtır tavuk dürüm</b><span>Crispy wrap</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/plate.jpg" alt="Çıtır lezzetler"><div class="info"><b>Çıtır lezzetler</b><span>Crispy plate</span><em>250 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/burger.jpg" alt="Hamburger"><div class="info"><b>Hamburger</b><span>Patates ile</span><em>350 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/salad.jpg" alt="Salata"><div class="info"><b>Izgara tavuk salata</b><span>Grilled chicken salad</span><em>250 ₺</em></a></div></div>
-    </div>
-
-    <div class="cat-title">Makarna</div>
-    <div class="cards">
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/alfredo.jpg" alt="Alfredo"><div class="info"><b>Alfredo penne</b><span>Kremalı, tavuklu</span><em>200 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/kpenne.jpg" alt="Köri penne"><div class="info"><b>Köri soslu penne</b><span>Curry penne</span><em>200 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/arrab.jpg" alt="Arrabbiata"><div class="info"><b>Arrabbiata penne</b><span>Acılı domates</span><em>200 ₺</em></a></div></div>
-    </div>
-
-    <div class="cat-title">Izgara</div>
-    <div class="cards">
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/steak.jpg" alt="Steak"><div class="info"><b>Beef steak</b><span>Pilav, patates, salata</span><em>900 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/strog.jpg" alt="Stroganoff"><div class="info"><b>Beef stroganoff</b><span>Kremalı mantarlı dana</span><em>800 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/etsote.jpg" alt="Et sote"><div class="info"><b>Et sote</b><span>Biberli dana</span><em>800 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/kofte.jpg" alt="Köfte"><div class="info"><b>Izgara köfte</b><span>Grilled meatballs</span><em>350 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/itavuk.jpg" alt="Izgara tavuk"><div class="info"><b>Izgara tavuk</b><span>Grilled chicken</span><em>350 ₺</em></a></div></div>
-    </div>
-
-    <div class="cat-title">Vejetaryen</div>
-    <div class="cards">
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/falafel.jpg" alt="Falafel"><div class="info"><b>Falafel</b><span>Humus, pide, limon</span><em>600 ₺</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sebze.jpg" alt="Sebze"><div class="info"><b>Izgara sebze tabağı</b><span>Karışık ızgara sebze</span><em>500 ₺</em></a></div></div>
-    </div>
-
-    <div class="cat-title">Tatlı</div>
-    <div class="cards">
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cheesecake.jpg" alt="Cheesecake"><div class="info"><b>Cheesecake</b><span>Orman meyveli</span><em>Fiyat yok</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/devil.jpg" alt="Devil's cake"><div class="info"><b>Devil's cake</b><span>Bitter çikolata</span><em>Fiyat yok</em></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/tiramisu.jpg" alt="Tiramisu"><div class="info"><b>Tiramisu</b><span>Kahveli mascarpone</span><em>Fiyat yok</em></a></div></div>
-    </div>
-    <p class="sub">Ekstra soslar ücretlidir.</p>
-  </section>
-
-  <section class="wrap section" id="icecek">
-    <h2>İçecekler</h2>
-    <p class="sub">Kaynak menüde fiyat yoktu.</p>
-    <div class="cat-title">Soğuk</div>
-    <div class="cards">
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/pepsi.jpg" alt="Pepsi Cola"><div class="info"><b>Pepsi Cola</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/pepsi_zero.jpg" alt="Pepsi Zero"><div class="info"><b>Pepsi Zero Cola</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sprite.jpg" alt="Sprite"><div class="info"><b>Sprite</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/fanta.jpg" alt="Fanta"><div class="info"><b>Fanta</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gazoz.jpg" alt="Gazoz"><div class="info"><b>Gazoz</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/limonata.jpg" alt="Limonata"><div class="info"><b>Limonata</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/meyveli_soda.jpg" alt="Meyveli soda"><div class="info"><b>Meyveli soda</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/soda.jpg" alt="Soda"><div class="info"><b>Soda</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/su.jpg" alt="Su"><div class="info"><b>Su</b></a></div></div>
-    </div>
-    <div class="cat-title">Sıcak</div>
-    <div class="cards">
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/americano.jpg" alt="Americano"><div class="info"><b>Americano</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/espresso.jpg" alt="Espresso"><div class="info"><b>Espresso</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/latte.jpg" alt="Latte"><div class="info"><b>Latte</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cappuccino.jpg" alt="Cappuccino"><div class="info"><b>Cappuccino</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/mocha.jpg" alt="Mocha"><div class="info"><b>Mocha coffee</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/nescafe.jpg" alt="Nescafe"><div class="info"><b>Nescafe</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/turkkahve.jpg" alt="Türk kahvesi"><div class="info"><b>Türk kahvesi</b></a></div></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cay.jpg" alt="Çay"><div class="info"><b>Çay</b></a></div></div>
-    </div>
-  </section>
-
-  <section class="wrap section" id="ziyaret">
-    <h2>Ziyaret</h2>
-    <div class="visit">
-      <div class="panel" style="padding:12px">
-        <div class="fact"><b>Adres</b>Türkmen, Huzur Sk. 14/A, 09400 Kuşadası / Aydın</div>
-        <div class="fact"><b>Telefon</b><a href="tel:+905539882566">0553 988 25 66</a></div>
-        <div class="fact"><b>Saat</b>Pazartesi–Cumartesi 11:00–00:00 · Pazar kapalı</div>
-        <div class="fact"><b>Yol</b>Merkezde Deniz Bank’ın karşısındaki sokaktan, Dent Island’dan sola.</div>
-        <a class="cta" href="https://maps.google.com/?q=Moon+Light+Cafe+Huzur+Sokak+14/A+Kusadasi" target="_blank" rel="noreferrer">Haritada aç</a>
+      <div class="hero-photos">
+        <img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe_out.jpg" alt="Kafe dışarı">
+        <img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe_in.jpg" alt="Kafe içi">
       </div>
-      <iframe class="map" title="Harita" src="https://maps.google.com/maps?q=Moon%20Light%20Cafe%20Huzur%20Sokak%2014/A%20Kusadasi&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
-    </div>
-  </section>
+    </header>
+  </div>
 
-  
-  <section class="wrap section" id="hakkimizda">
-    <h2>Hakkımızda</h2>
-    <div class="panel" style="padding:20px 24px">
-      <p style="margin:0 0 12px;line-height:1.7;color:var(--muted)">Moon light cafe, Kuşadası Türkmen’de, Huzur Sokak 14/A’da. Kahvaltıdan ızgaraya, makarnadan tatlıya kadar sade ve lezzetli bir menü sunuyoruz. Gece ışığında, rahat bir ortamda oturabileceğiniz küçük bir kafe.</p>
-      <div class="meta">
-        <span>Türkmen, Huzur Sk. 14/A</span>
-        <span>Pzt–Cmt 11:00–00:00</span>
-        <span>0553 988 25 66</span>
+  <div id="menu" class="page" style="display:none">
+    <section class="wrap section">
+      <h2>Menü</h2>
+      <p class="sub">Ürüne tıklayınca fotoğraf büyür.</p>
+      <div class="cat-title">Kahvaltı</div>
+      <div class="cards">
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/menemen.jpg" data-title="Menemen"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/menemen.jpg" alt="Menemen"><div class="info"><b>Menemen</b><span>Domates, biber, yumurta</span><em>250 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sucuk.jpg" data-title="Sucuklu yumurta"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sucuk.jpg" alt="Sucuk"><div class="info"><b>Sucuklu yumurta</b><span>Sahanda sucuk</span><em>250 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sahanda.jpg" data-title="Sahanda yumurta"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sahanda.jpg" alt="Sahanda"><div class="info"><b>Sahanda yumurta</b><span>Üç yumurta</span><em>200 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sogus.jpg" data-title="Soğuş tabağı"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/sogus.jpg" alt="Soğuş"><div class="info"><b>Soğuş tabağı</b><span>Domates, salatalık, peynir</span><em>150 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/bal.jpg" data-title="Bal ve tereyağı"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/bal.jpg" alt="Bal"><div class="info"><b>Bal ve tereyağı</b><span>Bal, tereyağı, ekmek</span><em>150 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/patates.jpg" data-title="Patates cipsi"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/patates.jpg" alt="Patates"><div class="info"><b>Patates cipsi</b><span>Kızarmış patates</span><em>150 ₺</em></div></div>
       </div>
-      <a class="cta" href="tel:+905539882566" style="margin-top:10px">Bizi ara</a>
-    </div>
-  </section>
+      <div class="cat-title">Tavuk</div>
+      <div class="cards">
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/kori.jpg" data-title="Köri soslu tavuk"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/kori.jpg" alt="Köri"><div class="info"><b>Köri soslu tavuk</b><span>Chicken curry</span><em>250 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/tatliaci.jpg" data-title="Tatlı acı"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/tatliaci.jpg" alt="Tatlı acı"><div class="info"><b>Tatlı acı soslu tavuk</b><span>Sweet chili</span><em>250 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe.jpg" data-title="Café de Paris"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe.jpg" alt="Cafe"><div class="info"><b>Café de Paris</b><span>Otlu kremalı sos</span><em>250 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/mexican.jpg" data-title="Mexican"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/mexican.jpg" alt="Mexican"><div class="info"><b>Mexican soslu tavuk</b><span>Mexican chicken</span><em>250 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/tsote.jpg" data-title="Tavuk sote"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/tsote.jpg" alt="Sote"><div class="info"><b>Tavuk sote</b><span>Chicken sauté</span><em>250 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/bbq.jpg" data-title="BBQ"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/bbq.jpg" alt="BBQ"><div class="info"><b>Barbekü soslu tavuk</b><span>BBQ chicken</span><em>250 ₺</em></div></div>
+      </div>
+      <div class="cat-title">Aparatif</div>
+      <div class="cards">
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/citir.jpg" data-title="Çıtır tavuk"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/citir.jpg" alt="Çıtır"><div class="info"><b>Çıtır tavuk</b><span>Crispy chicken</span><em>250 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/schnitzel.jpg" data-title="Şinitzel"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/schnitzel.jpg" alt="Şinitzel"><div class="info"><b>Şinitzel</b><span>Schnitzel</span><em>250 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/durum.jpg" data-title="Dürüm"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/durum.jpg" alt="Dürüm"><div class="info"><b>Çıtır tavuk dürüm</b><span>Crispy wrap</span><em>250 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/burger.jpg" data-title="Hamburger"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/burger.jpg" alt="Burger"><div class="info"><b>Hamburger</b><span>Patates ile</span><em>350 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/salad.jpg" data-title="Salata"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/salad.jpg" alt="Salata"><div class="info"><b>Izgara tavuk salata</b><span>Grilled chicken salad</span><em>250 ₺</em></div></div>
+      </div>
+      <div class="cat-title">Makarna</div>
+      <div class="cards">
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/alfredo.jpg" data-title="Alfredo penne"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/alfredo.jpg" alt="Alfredo"><div class="info"><b>Alfredo penne</b><span>Kremalı, tavuklu</span><em>200 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/kpenne.jpg" data-title="Köri penne"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/kpenne.jpg" alt="Köri"><div class="info"><b>Köri soslu penne</b><span>Curry penne</span><em>200 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/arrab.jpg" data-title="Arrabbiata"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/arrab.jpg" alt="Arrabbiata"><div class="info"><b>Arrabbiata penne</b><span>Acılı domates</span><em>200 ₺</em></div></div>
+      </div>
+      <div class="cat-title">Izgara</div>
+      <div class="cards">
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/steak.jpg" data-title="Beef steak"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/steak.jpg" alt="Steak"><div class="info"><b>Beef steak</b><span>Pilav, patates, salata</span><em>900 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/strog.jpg" data-title="Stroganoff"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/strog.jpg" alt="Stroganoff"><div class="info"><b>Beef stroganoff</b><span>Kremalı mantarlı dana</span><em>800 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/kofte.jpg" data-title="Izgara köfte"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/kofte.jpg" alt="Köfte"><div class="info"><b>Izgara köfte</b><span>Grilled meatballs</span><em>350 ₺</em></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/itavuk.jpg" data-title="Izgara tavuk"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/itavuk.jpg" alt="Izgara tavuk"><div class="info"><b>Izgara tavuk</b><span>Grilled chicken</span><em>350 ₺</em></div></div>
+      </div>
+      <div class="cat-title">İçecekler</div>
+      <div class="cards">
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/pepsi.jpg" data-title="Pepsi Cola"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/pepsi.jpg" alt="Pepsi"><div class="info"><b>Pepsi Cola</b></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/fanta.jpg" data-title="Fanta"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/fanta.jpg" alt="Fanta"><div class="info"><b>Fanta</b></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/americano.jpg" data-title="Americano"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/americano.jpg" alt="Americano"><div class="info"><b>Americano</b></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/turkkahve.jpg" data-title="Türk kahvesi"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/turkkahve.jpg" alt="Türk kahvesi"><div class="info"><b>Türk kahvesi</b></div></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cay.jpg" data-title="Çay"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cay.jpg" alt="Çay"><div class="info"><b>Çay</b></div></div>
+      </div>
+    </section>
+  </div>
 
-  <section class="wrap section" id="galeri">
-    <h2>Galeri</h2>
-    <p class="sub">Kafeden yemek fotoğrafları</p>
-    <div class="cards gallery-grid">
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/wrap.jpg" alt="Dürüm"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/chicken_plate.jpg" alt="Tavuk tabağı"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/alfredo_penne.jpg" alt="Alfredo"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/mushroom_chicken.jpg" alt="Mantarlı tavuk"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/burger.jpg" alt="Burger"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/arrabbiata.jpg" alt="Arrabbiata"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/spicy_chicken.jpg" alt="Acılı tavuk"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/orange_chicken.jpg" alt="Portakallı tavuk"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/curry_chicken.jpg" alt="Köri"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/grilled_chicken.jpg" alt="Izgara tavuk"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/crispy_plate.jpg" alt="Çıtır"></div>
-      <div class="card"><a href="#galeri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/takeaway.jpg" alt="Paket"></div>
-    </div>
-  </section>
+  <div id="hakkimizda" class="page" style="display:none">
+    <section class="wrap section">
+      <h2>Hakkımızda</h2>
+      <div class="about-grid">
+        <div class="panel" style="padding:20px 24px">
+          <p style="margin:0 0 12px;line-height:1.7;color:var(--muted)">Moon light cafe, Kuşadası Türkmen’de, Huzur Sokak 14/A’da. Kahvaltıdan ızgaraya, makarnadan tatlıya kadar sade ve lezzetli bir menü sunuyoruz. Gece ışığında, rahat bir ortamda oturabileceğiniz küçük bir kafe.</p>
+          <div class="meta"><span>Türkmen, Huzur Sk. 14/A</span><span>Pzt–Cmt 11:00–00:00</span><span>0553 988 25 66</span></div>
+          <a class="cta" href="tel:+905539882566" style="margin-top:10px">Bizi ara</a>
+        </div>
+        <div class="about-photos">
+          <img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe_out.jpg" alt="Kafe dışarı">
+          <img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/cafe_in.jpg" alt="Kafe içi">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="galeri" class="page" style="display:none">
+    <section class="wrap section">
+      <h2>Galeri</h2>
+      <p class="sub">Kafeden yemek fotoğrafları</p>
+      <div class="cards gallery-grid">
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/wrap.jpg" data-title="Dürüm"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/wrap.jpg" alt="Dürüm"></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/chicken_plate.jpg" data-title="Tavuk tabağı"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/chicken_plate.jpg" alt="Tavuk"></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/alfredo_penne.jpg" data-title="Alfredo"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/alfredo_penne.jpg" alt="Alfredo"></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/mushroom_chicken.jpg" data-title="Mantarlı tavuk"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/mushroom_chicken.jpg" alt="Mantarlı"></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/burger.jpg" data-title="Burger"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/burger.jpg" alt="Burger"></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/arrabbiata.jpg" data-title="Arrabbiata"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/arrabbiata.jpg" alt="Arrabbiata"></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/spicy_chicken.jpg" data-title="Acılı tavuk"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/spicy_chicken.jpg" alt="Acılı"></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/curry_chicken.jpg" data-title="Köri"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/curry_chicken.jpg" alt="Köri"></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/grilled_chicken.jpg" data-title="Izgara tavuk"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/grilled_chicken.jpg" alt="Izgara"></div>
+        <div class="card" onclick="openLb(this)" data-src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/crispy_plate.jpg" data-title="Çıtır"><img src="https://cdn.jsdelivr.net/gh/yagizm-production/moonlight-website@main/images/gallery/crispy_plate.jpg" alt="Çıtır"></div>
+      </div>
+    </section>
+  </div>
 
   <footer>
     <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
@@ -189,5 +135,24 @@
       <a class="cta" href="https://www.instagram.com/moon.light14a/" target="_blank" rel="noreferrer" style="background:#d4af6a;color:#0e1a2e">Instagram</a>
     </div>
   </footer>
+
+  <div id="lightbox" onclick="closeLb()">
+    <img id="lb-img" src="" alt="">
+    <div id="lb-title"></div>
+  </div>
+
+  <script>
+  function show(id){
+    document.querySelectorAll('.page').forEach(p=>p.style.display='none');
+    document.getElementById(id).style.display='block';
+    window.scrollTo(0,0);
+  }
+  function openLb(el){
+    document.getElementById('lb-img').src = el.dataset.src;
+    document.getElementById('lb-title').textContent = el.dataset.title || '';
+    document.getElementById('lightbox').style.display='flex';
+  }
+  function closeLb(){ document.getElementById('lightbox').style.display='none'; }
+  </script>
 </body>
 </html>
