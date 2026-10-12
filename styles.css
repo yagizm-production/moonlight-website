@@ -8,6 +8,8 @@
   --muted: #9eb0c6;
   --card: rgba(18, 28, 46, 0.72);
   --accent: #d4e2f2;
+  --gold: #d4af6a;
+  --gold-soft: rgba(212,175,106,0.55);
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -44,11 +46,11 @@ nav {
   position: sticky; top: 0; z-index: 10;
   background: rgba(12, 20, 36, 0.72);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(200,214,232,0.12);
+  border-bottom: 1px solid rgba(212,175,106,0.25);
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 58px; }
 .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--silver); font-size: 15px; }
-.brand img { width: 34px; height: 34px; object-fit: cover; border-radius: 50%; border: 1px solid rgba(220,232,250,0.3); }
+.brand img { width: 52px; height: 38px; object-fit: contain; border-radius: 6px; }
 .links { display: flex; gap: 16px; font-size: 13px; color: var(--glow); }
 .cta {
   background: linear-gradient(180deg, #d8e6f6, #b8cce4);
@@ -62,17 +64,10 @@ nav {
   box-shadow: 0 12px 40px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.06);
 }
 .hero-copy { padding: 22px 24px; position: relative; }
-.moon {
-  position: absolute; top: 18px; right: 22px;
-  width: 42px; height: 42px; border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #f4f7fb, #c9d6e8);
-  box-shadow: 0 0 24px rgba(220,232,250,0.55);
-}
-.moon::after {
-  content: "";
-  position: absolute; top: -2px; right: -8px;
-  width: 36px; height: 36px; border-radius: 50%;
-  background: #152238;
+.hero-logo {
+  position: absolute; top: 14px; right: 18px;
+  width: 72px; height: 52px; object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(212,175,106,0.25));
 }
 .kicker { letter-spacing: 0.18em; text-transform: uppercase; color: var(--glow); font-size: 11px; font-weight: 700; }
 h1 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: clamp(40px, 5vw, 58px); line-height: 0.92; margin: 6px 0 10px; color: var(--silver); }
@@ -84,20 +79,20 @@ h1 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: clam
 .section { padding: 18px 0 4px; }
 .section h2 { font-family: "Cormorant Garamond", serif; font-size: 32px; font-weight: 500; margin: 0 0 4px; color: var(--silver); }
 .sub { color: var(--muted); margin: 0 0 10px; font-size: 13px; }
-.cat-title { margin: 16px 0 8px; color: var(--glow); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; }
+.cat-title { margin: 16px 0 8px; color: var(--gold); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); gap: 10px; }
 .card {
   background: var(--card);
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(220,232,250,0.12);
+  border: 1px solid rgba(212,175,106,0.18);
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 .card img { height: 120px; width: 100%; object-fit: cover; }
 .card .info { padding: 8px 10px 10px; }
 .card b { display: block; font-size: 13.5px; line-height: 1.25; color: var(--silver); }
 .card span { display: block; color: var(--muted); font-size: 11.5px; margin-top: 2px; }
-.card em { display: block; margin-top: 6px; font-style: normal; color: var(--accent); font-weight: 700; font-size: 13px; }
+.card em { display: block; margin-top: 6px; font-style: normal; color: var(--gold); font-weight: 700; font-size: 13px; }
 .visit { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 10px; }
 .fact { background: rgba(200,214,232,0.06); border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; font-size: 13.5px; border: 1px solid rgba(200,214,232,0.08); }
 .fact b { display: block; font-size: 11px; color: var(--glow); letter-spacing: 0.06em; text-transform: uppercase; }
