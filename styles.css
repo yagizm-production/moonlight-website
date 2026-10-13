@@ -288,3 +288,11 @@ footer a { color: var(--gold); }
   .home-ctas{grid-template-columns:1fr}
   .hero-photos img{height:130px}
 }
+
+/* TR/EN toggle */
+.nav-right { display: flex; align-items: center; gap: 10px; }
+.lang-btn { display: inline-flex; align-items: center; gap: 4px; height: 34px; padding: 0 11px; border-radius: 999px; border: 1px solid var(--gold-soft, rgba(212,175,106,.5)); background: rgba(14,26,46,.55); color: var(--muted, #a9b6c8); font: 600 12px/1 Manrope, sans-serif; letter-spacing: .06em; cursor: pointer; }
+.lang-btn i { font-style: normal; opacity: .4; }
+.lang-btn span.on { color: #d4af6a; }
+.lang-btn:hover { background: rgba(212,175,106,.15); }
+@media (max-width: 760px) { .nav-right { gap: 8px; } .lang-btn { height: 40px; } }

@@ -29,7 +29,7 @@
         <a class="nav-btn" href="#galeri" onclick="show('galeri');return false;">Galeri</a>
         <a class="nav-btn" href="#konum" onclick="show('konum');return false;">Konum</a>
       </div>
-      <a class="cta" href="tel:+905539882566">Ara</a>
+      <div class="nav-right"><button type="button" class="lang-btn" id="langBtn" onclick="setLang(curLang==='tr'?'en':'tr')" aria-label="Language / Dil"><span data-l="tr">TR</span><i>/</i><span data-l="en">EN</span></button><a class="cta" href="tel:+905539882566">Ara</a></div>
     </div>
   </nav>
 
@@ -238,5 +238,6 @@
   (function(){var h=location.hash.slice(1);if(h&&document.getElementById(h)&&document.getElementById(h).classList.contains('page'))show(h);})();
   function closeLb(){ document.getElementById('lightbox').style.display='none'; }
   </script>
+  <script src="i18n.js"></script>
 </body>
 </html>
