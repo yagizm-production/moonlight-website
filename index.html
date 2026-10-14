@@ -58,7 +58,7 @@
     <section class="wrap section">
       <h2>Öne çıkanlar</h2>
       <p class="sub">Menümüzden sevilen lezzetler.</p>
-      <div class="cards"><div class="card" onclick="openLb(this)" data-src="images/burger.jpg" data-title="Hamburger"><img src="images/burger.jpg" alt="Hamburger" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Hamburger</b><span>Patates ile</span><em>350 ₺</em></div></div><div class="card" onclick="openLb(this)" data-src="images/kofte.jpg" data-title="Izgara köfte"><img src="images/kofte.jpg" alt="Izgara köfte" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Izgara köfte</b><span>Grilled meatballs</span><em>350 ₺</em></div></div><div class="card" onclick="openLb(this)" data-src="images/steak.jpg" data-title="Beef steak"><img src="images/steak.jpg" alt="Beef steak" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Beef steak</b><span>Café de Paris sos, pilav, biber, cips ve salata</span><em>900 ₺</em></div></div><div class="card" onclick="openLb(this)" data-src="images/alfredo.jpg" data-title="Alfredo penne"><img src="images/alfredo.jpg" alt="Alfredo penne" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Alfredo penne</b><span>Kremalı, tavuklu</span><em>200 ₺</em></div></div><div class="card" onclick="openLb(this)" data-src="images/menemen.jpg" data-title="Menemen"><img src="images/menemen.jpg" alt="Menemen" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Menemen</b><span>Domates, biber, yumurta</span><em>250 ₺</em></div></div><div class="card" onclick="openLb(this)" data-src="images/itavuk.jpg" data-title="Izgara tavuk"><img src="images/itavuk.jpg" alt="Izgara tavuk" width="480" height="480" loading="lazy" decoding="async"><div class="info"><b>Izgara tavuk</b><span>Grilled chicken</span><em>350 ₺</em></div></div></div>
+      <div class="cards"><div class="card menu-item" data-img="images/burger.jpg"><div class="info"><b>Hamburger</b><span>Patates ile</span><em>350 ₺</em></div></div><div class="card menu-item" data-img="images/kofte.jpg"><div class="info"><b>Izgara köfte</b><span>Grilled meatballs</span><em>350 ₺</em></div></div><div class="card menu-item" data-img="images/steak.jpg"><div class="info"><b>Beef steak</b><span>Café de Paris sos, pilav, biber, cips ve salata</span><em>900 ₺</em></div></div><div class="card menu-item" data-img="images/alfredo.jpg"><div class="info"><b>Alfredo penne</b><span>Kremalı, tavuklu</span><em>200 ₺</em></div></div><div class="card menu-item" data-img="images/menemen.jpg"><div class="info"><b>Menemen</b><span>Domates, biber, yumurta</span><em>250 ₺</em></div></div><div class="card menu-item" data-img="images/itavuk.jpg"><div class="info"><b>Izgara tavuk</b><span>Grilled chicken</span><em>350 ₺</em></div></div></div>
       <a class="more-link" href="#menu" onclick="show('menu');return false;">Tüm menü →</a>
     </section>
     <section class="wrap section">
@@ -72,78 +72,78 @@
   <div id="menu" class="page" style="display:none">
     <section class="wrap section">
       <h2>Menü</h2>
-      <p class="sub">Ürüne tıklayınca fotoğraf büyür.</p>
+      <p class="sub" hidden>Ürüne tıklayınca fotoğraf büyür.</p>
       <div class="cat-title">Kahvaltı</div>
       <div class="cards">
-        <div class="card" onclick="openLb(this)" data-src="images/menemen.jpg" data-title="Menemen"><img src="images/menemen.jpg" alt="Menemen" loading="lazy"><div class="info"><b>Menemen</b><span>Domates, biber, yumurta</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/sucuk.jpg" data-title="Sucuklu yumurta"><img src="images/sucuk.jpg" alt="Sucuklu yumurta" loading="lazy"><div class="info"><b>Sucuklu yumurta</b><span>Sahanda sucuk</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/sahanda.jpg" data-title="Sahanda yumurta"><img src="images/sahanda.jpg" alt="Sahanda yumurta" loading="lazy"><div class="info"><b>Sahanda yumurta</b><span>Üç yumurta</span><em>200 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/sogus.jpg" data-title="Söğüş tabağı"><img src="images/sogus.jpg" alt="Söğüş tabağı" loading="lazy"><div class="info"><b>Söğüş tabağı</b><span>Domates, salatalık, zeytin, peynir</span><em>150 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/bal.jpg" data-title="Bal ve tereyağı"><img src="images/bal.jpg" alt="Bal ve tereyağı" loading="lazy"><div class="info"><b>Bal ve tereyağı</b><span>Bal, tereyağı, ekmek</span><em>150 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/patates.jpg" data-title="Patates cipsi"><img src="images/patates.jpg" alt="Patates cipsi" loading="lazy"><div class="info"><b>Patates cipsi</b><span>Kızarmış patates</span><em>150 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/menemen.jpg"><div class="info"><b>Menemen</b><span>Domates, biber, yumurta</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/sucuk.jpg"><div class="info"><b>Sucuklu yumurta</b><span>Sahanda sucuk</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/sahanda.jpg"><div class="info"><b>Sahanda yumurta</b><span>Üç yumurta</span><em>200 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/sogus.jpg"><div class="info"><b>Söğüş tabağı</b><span>Domates, salatalık, zeytin, peynir</span><em>150 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/bal.jpg"><div class="info"><b>Bal ve tereyağı</b><span>Bal, tereyağı, ekmek</span><em>150 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/patates.jpg"><div class="info"><b>Patates cipsi</b><span>Kızarmış patates</span><em>150 ₺</em></div></div>
       </div>
       <div class="cat-title">Tavuk</div>
       <div class="cards">
-        <div class="card" onclick="openLb(this)" data-src="images/kori.jpg" data-title="Köri soslu tavuk"><img src="images/kori.jpg" alt="Köri soslu tavuk" loading="lazy"><div class="info"><b>Köri soslu tavuk</b><span>Chicken curry</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/tatliaci.jpg" data-title="Tatlı acı soslu tavuk"><img src="images/tatliaci.jpg" alt="Tatlı acı soslu tavuk" loading="lazy"><div class="info"><b>Tatlı acı soslu tavuk</b><span>Sweet chili chicken</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/cafe.jpg" data-title="Café de Paris soslu tavuk"><img src="images/cafe.jpg" alt="Café de Paris soslu tavuk" loading="lazy"><div class="info"><b>Café de Paris soslu tavuk</b><span>Otlu kremalı sos</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/mexican.jpg" data-title="Mexican soslu tavuk"><img src="images/mexican.jpg" alt="Mexican soslu tavuk" loading="lazy"><div class="info"><b>Mexican soslu tavuk</b><span>Mexican chicken</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/tsote.jpg" data-title="Tavuk sote"><img src="images/tsote.jpg" alt="Tavuk sote" loading="lazy"><div class="info"><b>Tavuk sote</b><span>Chicken sauté</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/bbq.jpg" data-title="Barbekü soslu tavuk"><img src="images/bbq.jpg" alt="Barbekü soslu tavuk" loading="lazy"><div class="info"><b>Barbekü soslu tavuk</b><span>BBQ chicken</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/kori.jpg"><div class="info"><b>Köri soslu tavuk</b><span>Chicken curry</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/tatliaci.jpg"><div class="info"><b>Tatlı acı soslu tavuk</b><span>Sweet chili chicken</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/cafe.jpg"><div class="info"><b>Café de Paris soslu tavuk</b><span>Otlu kremalı sos</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/mexican.jpg"><div class="info"><b>Mexican soslu tavuk</b><span>Mexican chicken</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/tsote.jpg"><div class="info"><b>Tavuk sote</b><span>Chicken sauté</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/bbq.jpg"><div class="info"><b>Barbekü soslu tavuk</b><span>BBQ chicken</span><em>250 ₺</em></div></div>
       </div>
       <div class="cat-title">Aparatif</div>
       <div class="cards">
-        <div class="card" onclick="openLb(this)" data-src="images/citir.jpg" data-title="Çıtır tavuk"><img src="images/citir.jpg" alt="Çıtır tavuk" loading="lazy"><div class="info"><b>Çıtır tavuk</b><span>Crispy chicken</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/schnitzel.jpg" data-title="Şinitzel"><img src="images/schnitzel.jpg" alt="Şinitzel" loading="lazy"><div class="info"><b>Şinitzel</b><span>Schnitzel</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/durum.jpg" data-title="Çıtır tavuk dürüm"><img src="images/durum.jpg" alt="Çıtır tavuk dürüm" loading="lazy"><div class="info"><b>Çıtır tavuk dürüm</b><span>Crispy chicken wrap</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/plate.jpg" data-title="Çıtır lezzetler"><img src="images/plate.jpg" alt="Çıtır lezzetler" loading="lazy"><div class="info"><b>Çıtır lezzetler</b><span>Crispy plate</span><em>250 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/burger.jpg" data-title="Hamburger"><img src="images/burger.jpg" alt="Hamburger" loading="lazy"><div class="info"><b>Hamburger</b><span>Patates ile</span><em>350 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/salad.jpg" data-title="Izgara tavuk salata"><img src="images/salad.jpg" alt="Izgara tavuk salata" loading="lazy"><div class="info"><b>Izgara tavuk salata</b><span>Grilled chicken salad</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/citir.jpg"><div class="info"><b>Çıtır tavuk</b><span>Crispy chicken</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/schnitzel.jpg"><div class="info"><b>Şinitzel</b><span>Schnitzel</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/durum.jpg"><div class="info"><b>Çıtır tavuk dürüm</b><span>Crispy chicken wrap</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/plate.jpg"><div class="info"><b>Çıtır lezzetler</b><span>Crispy plate</span><em>250 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/burger.jpg"><div class="info"><b>Hamburger</b><span>Patates ile</span><em>350 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/salad.jpg"><div class="info"><b>Izgara tavuk salata</b><span>Grilled chicken salad</span><em>250 ₺</em></div></div>
       </div>
       <div class="cat-title">Makarna</div>
       <div class="cards">
-        <div class="card" onclick="openLb(this)" data-src="images/alfredo.jpg" data-title="Alfredo penne"><img src="images/alfredo.jpg" alt="Alfredo penne" loading="lazy"><div class="info"><b>Alfredo penne</b><span>Kremalı, tavuklu</span><em>200 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/kpenne.jpg" data-title="Körili penne"><img src="images/kpenne.jpg" alt="Körili penne" loading="lazy"><div class="info"><b>Körili penne</b><span>Curry penne</span><em>200 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/arrab.jpg" data-title="Arrabbiata penne"><img src="images/arrab.jpg" alt="Arrabbiata penne" loading="lazy"><div class="info"><b>Arrabbiata penne</b><span>Acılı domates</span><em>200 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/alfredo.jpg"><div class="info"><b>Alfredo penne</b><span>Kremalı, tavuklu</span><em>200 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/kpenne.jpg"><div class="info"><b>Körili penne</b><span>Curry penne</span><em>200 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/arrab.jpg"><div class="info"><b>Arrabbiata penne</b><span>Acılı domates</span><em>200 ₺</em></div></div>
       </div>
       <div class="cat-title">Izgara</div>
       <div class="cards">
-        <div class="card" onclick="openLb(this)" data-src="images/steak.jpg" data-title="Beef steak"><img src="images/steak.jpg" alt="Beef steak" loading="lazy"><div class="info"><b>Beef steak</b><span>Café de Paris sos, pilav, biber, cips ve salata</span><em>900 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/strog.jpg" data-title="Beef stroganoff"><img src="images/strog.jpg" alt="Beef stroganoff" loading="lazy"><div class="info"><b>Beef stroganoff</b><span>Pilav, cips ve salata</span><em>800 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/etsote.jpg" data-title="Et sote"><img src="images/etsote.jpg" alt="Et sote" loading="lazy"><div class="info"><b>Et sote</b><span>Beef sauté</span><em>800 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/kofte.jpg" data-title="Izgara köfte"><img src="images/kofte.jpg" alt="Izgara köfte" loading="lazy"><div class="info"><b>Izgara köfte</b><span>Grilled meatballs</span><em>350 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/itavuk.jpg" data-title="Izgara tavuk"><img src="images/itavuk.jpg" alt="Izgara tavuk" loading="lazy"><div class="info"><b>Izgara tavuk</b><span>Grilled chicken</span><em>350 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/steak.jpg"><div class="info"><b>Beef steak</b><span>Café de Paris sos, pilav, biber, cips ve salata</span><em>900 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/strog.jpg"><div class="info"><b>Beef stroganoff</b><span>Pilav, cips ve salata</span><em>800 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/etsote.jpg"><div class="info"><b>Et sote</b><span>Beef sauté</span><em>800 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/kofte.jpg"><div class="info"><b>Izgara köfte</b><span>Grilled meatballs</span><em>350 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/itavuk.jpg"><div class="info"><b>Izgara tavuk</b><span>Grilled chicken</span><em>350 ₺</em></div></div>
       </div>
       <div class="cat-title">Vejetaryen</div>
       <div class="cards">
-        <div class="card" onclick="openLb(this)" data-src="images/falafel.jpg" data-title="Falafel"><img src="images/falafel.jpg" alt="Falafel" loading="lazy"><div class="info"><b>Falafel</b><span>Vegetarian</span><em>600 ₺</em></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/sebze.jpg" data-title="Izgara sebze tabağı"><img src="images/sebze.jpg" alt="Izgara sebze tabağı" loading="lazy"><div class="info"><b>Izgara sebze tabağı</b><span>Brokoli, patlıcan, kabak, havuç, soğan, biber, domates, mantar</span><em>500 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/falafel.jpg"><div class="info"><b>Falafel</b><span>Vegetarian</span><em>600 ₺</em></div></div>
+        <div class="card menu-item" data-img="images/sebze.jpg"><div class="info"><b>Izgara sebze tabağı</b><span>Brokoli, patlıcan, kabak, havuç, soğan, biber, domates, mantar</span><em>500 ₺</em></div></div>
       </div>
       <div class="cat-title">Tatlılar</div>
       <div class="cards">
-        <div class="card" onclick="openLb(this)" data-src="images/cheesecake.jpg" data-title="Cheesecake"><img src="images/cheesecake.jpg" alt="Cheesecake" loading="lazy"><div class="info"><b>Cheesecake</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/devil.jpg" data-title="Devil&#39;s cake"><img src="images/devil.jpg" alt="Devil&#39;s cake" loading="lazy"><div class="info"><b>Devil's cake</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/tiramisu.jpg" data-title="Tiramisu"><img src="images/tiramisu.jpg" alt="Tiramisu" loading="lazy"><div class="info"><b>Tiramisu</b></div></div>
+        <div class="card menu-item" data-img="images/cheesecake.jpg"><div class="info"><b>Cheesecake</b></div></div>
+        <div class="card menu-item" data-img="images/devil.jpg"><div class="info"><b>Devil's cake</b></div></div>
+        <div class="card menu-item" data-img="images/tiramisu.jpg"><div class="info"><b>Tiramisu</b></div></div>
       </div>
       <div class="cat-title">İçecekler</div>
       <div class="cards">
-        <div class="card" onclick="openLb(this)" data-src="images/pepsi.jpg" data-title="Pepsi Cola"><img src="images/pepsi.jpg" alt="Pepsi Cola" loading="lazy"><div class="info"><b>Pepsi Cola</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/pepsi_zero.jpg" data-title="Pepsi Zero Cola"><img src="images/pepsi_zero.jpg" alt="Pepsi Zero Cola" loading="lazy"><div class="info"><b>Pepsi Zero Cola</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/sprite.jpg" data-title="Sprite"><img src="images/sprite.jpg" alt="Sprite" loading="lazy"><div class="info"><b>Sprite</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/fanta.jpg" data-title="Fanta"><img src="images/fanta.jpg" alt="Fanta" loading="lazy"><div class="info"><b>Fanta</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/gazoz.jpg" data-title="Gazoz"><img src="images/gazoz.jpg" alt="Gazoz" loading="lazy"><div class="info"><b>Gazoz</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/limonata.jpg" data-title="Limonata"><img src="images/limonata.jpg" alt="Limonata" loading="lazy"><div class="info"><b>Limonata</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/meyveli_soda.jpg" data-title="Meyveli soda"><img src="images/meyveli_soda.jpg" alt="Meyveli soda" loading="lazy"><div class="info"><b>Meyveli soda</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/soda.jpg" data-title="Soda"><img src="images/soda.jpg" alt="Soda" loading="lazy"><div class="info"><b>Soda</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/su.jpg" data-title="Su"><img src="images/su.jpg" alt="Su" loading="lazy"><div class="info"><b>Su</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/americano.jpg" data-title="Americano"><img src="images/americano.jpg" alt="Americano" loading="lazy"><div class="info"><b>Americano</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/espresso.jpg" data-title="Espresso"><img src="images/espresso.jpg" alt="Espresso" loading="lazy"><div class="info"><b>Espresso</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/latte.jpg" data-title="Latte"><img src="images/latte.jpg" alt="Latte" loading="lazy"><div class="info"><b>Latte</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/cappuccino.jpg" data-title="Cappuccino"><img src="images/cappuccino.jpg" alt="Cappuccino" loading="lazy"><div class="info"><b>Cappuccino</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/mocha.jpg" data-title="Mocha coffee"><img src="images/mocha.jpg" alt="Mocha coffee" loading="lazy"><div class="info"><b>Mocha coffee</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/nescafe.jpg" data-title="Nescafe"><img src="images/nescafe.jpg" alt="Nescafe" loading="lazy"><div class="info"><b>Nescafe</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/turkkahve.jpg" data-title="Türk kahvesi"><img src="images/turkkahve.jpg" alt="Türk kahvesi" loading="lazy"><div class="info"><b>Türk kahvesi</b></div></div>
-        <div class="card" onclick="openLb(this)" data-src="images/cay.jpg" data-title="Çay"><img src="images/cay.jpg" alt="Çay" loading="lazy"><div class="info"><b>Çay</b></div></div>
+        <div class="card menu-item" data-img="images/pepsi.jpg"><div class="info"><b>Pepsi Cola</b></div></div>
+        <div class="card menu-item" data-img="images/pepsi_zero.jpg"><div class="info"><b>Pepsi Zero Cola</b></div></div>
+        <div class="card menu-item" data-img="images/sprite.jpg"><div class="info"><b>Sprite</b></div></div>
+        <div class="card menu-item" data-img="images/fanta.jpg"><div class="info"><b>Fanta</b></div></div>
+        <div class="card menu-item" data-img="images/gazoz.jpg"><div class="info"><b>Gazoz</b></div></div>
+        <div class="card menu-item" data-img="images/limonata.jpg"><div class="info"><b>Limonata</b></div></div>
+        <div class="card menu-item" data-img="images/meyveli_soda.jpg"><div class="info"><b>Meyveli soda</b></div></div>
+        <div class="card menu-item" data-img="images/soda.jpg"><div class="info"><b>Soda</b></div></div>
+        <div class="card menu-item" data-img="images/su.jpg"><div class="info"><b>Su</b></div></div>
+        <div class="card menu-item" data-img="images/americano.jpg"><div class="info"><b>Americano</b></div></div>
+        <div class="card menu-item" data-img="images/espresso.jpg"><div class="info"><b>Espresso</b></div></div>
+        <div class="card menu-item" data-img="images/latte.jpg"><div class="info"><b>Latte</b></div></div>
+        <div class="card menu-item" data-img="images/cappuccino.jpg"><div class="info"><b>Cappuccino</b></div></div>
+        <div class="card menu-item" data-img="images/mocha.jpg"><div class="info"><b>Mocha coffee</b></div></div>
+        <div class="card menu-item" data-img="images/nescafe.jpg"><div class="info"><b>Nescafe</b></div></div>
+        <div class="card menu-item" data-img="images/turkkahve.jpg"><div class="info"><b>Türk kahvesi</b></div></div>
+        <div class="card menu-item" data-img="images/cay.jpg"><div class="info"><b>Çay</b></div></div>
       </div>
       <p class="sub" style="margin-top:18px">Ekstra soslar ücretlidir.</p>
     </section>

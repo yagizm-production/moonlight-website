@@ -296,3 +296,14 @@ footer a { color: var(--gold); }
 .lang-btn span.on { color: #d4af6a; }
 .lang-btn:hover { background: rgba(212,175,106,.15); }
 @media (max-width: 760px) { .nav-right { gap: 8px; } .lang-btn { height: 40px; } }
+
+/* Photo-free menu items (photos paused; data-img keeps the path for later) */
+.cards:has(.menu-item){grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.card.menu-item{cursor:default;display:flex;border-left:3px solid var(--gold-soft,rgba(212,175,106,.5))}
+.card.menu-item .info{display:grid;grid-template-columns:1fr auto;column-gap:12px;align-items:baseline;width:100%;padding:12px 14px}
+.card.menu-item b{grid-column:1;font-size:15px}
+.card.menu-item span{grid-column:1;grid-row:2;font-size:12.5px;line-height:1.35;margin-top:3px}
+.card.menu-item em{grid-column:2;grid-row:1;margin:0;font-size:15px;white-space:nowrap}
+@media (hover:hover){.card.menu-item:hover{transform:none;box-shadow:none}}
+.card.menu-item:active{transform:none}
+@media (max-width:600px){.cards:has(.menu-item){grid-template-columns:1fr;gap:8px}}
