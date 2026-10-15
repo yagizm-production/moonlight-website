@@ -107,8 +107,8 @@ footer { padding: 18px 0 28px; color: var(--muted); font-size: 12px; }
   .moon { width: 34px; height: 34px; }
 }
 
-.gallery-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-.gallery-grid .card img { height: 180px; }
+.gallery-grid { grid-template-columns: repeat(3, 1fr); }
+.gallery-grid .card img { height: 230px; }
 
 
 .nav-btn {
