@@ -39,7 +39,7 @@ var I18N_EN = {
 "Ekstra soslar ücretlidir.":"Extra sauces are charged separately.",
 "Moon light cafe, Kuşadası Türkmen’de, Huzur Sokak 14/A’da. Kahvaltıdan ızgaraya, makarnadan tatlıya kadar sade ve lezzetli bir menü sunuyoruz. Gece ışığında, rahat bir ortamda oturabileceğiniz küçük bir kafe.":"Moon light cafe is at Huzur Sokak 14/A in Türkmen, Kuşadası. We serve a simple, tasty menu – from breakfast to grills, from pasta to desserts. A small cafe where you can relax in a cosy setting under the night lights.",
 "Bizi ara":"Call us",
-"Kafeden yemek fotoğrafları":"Photos from the cafe",
+"Mekanımızdan kareler":"Moments from our venue",
 "Dürüm":"Wrap","Tavuk tabağı":"Chicken plate","Mantarlı tavuk":"Chicken with mushrooms","Mantarlı":"Chicken with mushrooms","Acılı tavuk":"Spicy chicken","Acılı":"Spicy chicken","Köri":"Chicken curry","Çıtır":"Crispy plate",
 "Konum / Bize Ulaşın":"Location / Contact us","Kuşadası Türkmen'de, Huzur Sokak'tayız. Bekleriz!":"Find us on Huzur Street in Türkmen, Kuşadası. See you soon!",
 "Adres":"Address","Çalışma saatleri":"Opening hours","Telefon":"Phone","Yol Tarifi Al":"Get Directions",
